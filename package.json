@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && build:css && vite build",
+    "build": "tsc && npm run build:css && vite build",
     "build:css": "tailwindcss -i ./src/app/styles.css -o ./src/app/styles/tailwind.css",
     "build:css:dev": "tailwindcss -i ./src/app/styles.css -o ./src/app/styles/tailwind.css --watch",
     "preview": "vite preview"

@@ -8,7 +8,7 @@ const App: React.FC = React.memo(() => {
 
   return (
     <StoreContext.Provider value={new GameStore(gameState)}>
-      <Game />;
+      <Game />
     </StoreContext.Provider>
   );
 });

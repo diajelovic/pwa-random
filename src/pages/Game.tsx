@@ -27,7 +27,7 @@ export default function Game() {
               +
             </button>{" "}
             <button
-              className="block px-4 py-2 rounded mx-4  bg-green-400"
+              className="block px-4 py-2 rounded mx-4 bg-green-400"
               onClick={decrease}
             >
               -

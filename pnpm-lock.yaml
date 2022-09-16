@@ -12,6 +12,7 @@ specifiers:
   typescript: ^4.4.4
   vite: ^2.7.2
   vite-plugin-pwa: ^0.12.6
+  vite-plugin-static-copy: ^0.9.0
 
 dependencies:
   react: 17.0.2
@@ -27,6 +28,7 @@ devDependencies:
   typescript: 4.5.4
   vite: 2.7.6
   vite-plugin-pwa: 0.12.6_vite@2.7.6
+  vite-plugin-static-copy: 0.9.0_vite@2.7.6
 
 packages:
 
@@ -2253,6 +2255,15 @@ packages:
       to-regex-range: 5.0.1
     dev: true
 
+  /fs-extra/10.1.0:
+    resolution: {integrity: sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==}
+    engines: {node: '>=12'}
+    dependencies:
+      graceful-fs: 4.2.10
+      jsonfile: 6.1.0
+      universalify: 2.0.0
+    dev: true
+
   /fs-extra/9.1.0:
     resolution: {integrity: sha512-hcg3ZmepS30/7BSFqRvoo3DOMQu7IjqxO5nCDt+zM9XWjb33Wg7ziNT+Qvqbuc3+gWpzO02JubVyk2G4Zvo1OQ==}
     engines: {node: '>=10'}
@@ -3397,6 +3408,19 @@ packages:
     transitivePeerDependencies:
       - '@types/babel__core'
       - supports-color
+    dev: true
+
+  /vite-plugin-static-copy/0.9.0_vite@2.7.6:
+    resolution: {integrity: sha512-0h8esPoZn6zdTK8KoDbiZPJum7+Nw2t4oLTpu2i2haP2HmgysRH+Xy6FaE6lLyCpgODYR5RiRjbLH0UKUZpIPw==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    peerDependencies:
+      vite: ^3.0.0
+    dependencies:
+      chokidar: 3.5.3
+      fast-glob: 3.2.11
+      fs-extra: 10.1.0
+      picocolors: 1.0.0
+      vite: 2.7.6
     dev: true
 
   /vite/2.7.6:
